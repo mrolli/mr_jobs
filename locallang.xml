@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for extension 'mr_jobs'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="pi1_title">Job offers</label>
+			<label index="pi1_plus_wiz_description">Description</label>
+			<label index="mr_jobs.pi_flexform.sheet_general">General Settings</label>
+            <label index="mr_jobs.pi_flexform.what_to_display">What to display</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="pi1_title">Offres d'Emploi</label>
+			<label index="pi1_plus_wiz_description">Déscription</label>
+			<label index="mr_jobs.pi_flexform.sheet_general">Allgemeines</label>
+            <label index="mr_jobs.pi_flexform.what_to_display">Anzeige</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="pi1_title">Stellenangebote</label>
+			<label index="pi1_plus_wiz_description">Beschreibung</label>
+			<label index="mr_jobs.pi_flexform.sheet_general">Generale</label>
+            <label index="mr_jobs.pi_flexform.what_to_display">What to display</label>
+		</languageKey>
+	</data>
+</T3locallang>
