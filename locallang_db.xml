@@ -22,6 +22,7 @@
 			<label index="tx_mrjobs_offers.positiontype.I.1">leading position</label>
 			<label index="tx_mrjobs_offers.positiontype.I.2">non-leading position</label>
 			<label index="tx_mrjobs_offers.positiontype">Position</label>
+			<label index="tx_mrjobs_offers.description">Description</label>
 			<label index="tx_mrjobs_offers.jobstart">Start of Work</label>
 			<label index="tx_mrjobs_offers.number.I.0">0</label>
 			<label index="tx_mrjobs_offers.number.I.1">1</label>
@@ -149,6 +150,7 @@
 			<label index="tx_mrjobs_offers.positiontype.I.2">Position non-supérieur</label>
 			<label index="tx_mrjobs_offers.jobtype">Type d'emploi</label>
 			<label index="tx_mrjobs_offers.positiontype">Position</label>
+			<label index="tx_mrjobs_offers.description">Description</label>
 			<label index="tx_mrjobs_offers.jobstart">A partir de</label>
 			<label index="tx_mrjobs_offers.number.I.0">0</label>
 			<label index="tx_mrjobs_offers.number.I.1">1</label>
@@ -275,6 +277,7 @@
 			<label index="tx_mrjobs_offers.positiontype.I.1">Leitende Stelle</label>
 			<label index="tx_mrjobs_offers.positiontype.I.2">keine leitende Stelle</label>
 			<label index="tx_mrjobs_offers.positiontype">Position</label>
+			<label index="tx_mrjobs_offers.description">Beschreibung</label>
 			<label index="tx_mrjobs_offers.jobstart">Anstellungsbeginn</label>
 			<label index="tx_mrjobs_offers.number.I.0">0</label>
 			<label index="tx_mrjobs_offers.number.I.1">1</label>

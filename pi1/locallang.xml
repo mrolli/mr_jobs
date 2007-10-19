@@ -34,6 +34,7 @@
 			<label index="jobtype.3">Permanent job</label>
 			<label index="positiontype.1">leading position</label>
 			<label index="positiontype.2">non-leading position</label>
+			<label index="description">Description</label>
 			<label index="duration">Duration</label>
 			<label index="contact_person">Contact person</label>
 			<label index="name">Name</label>
@@ -81,6 +82,7 @@
 			<label index="jobtype.3">unbefristete Stelle</label>
 			<label index="positiontype.1">leitende Position</label>
 			<label index="positiontype.2">keine leitende Position</label>
+			<label index="description">Beschreibung</label>
 			<label index="duration">Dauer</label>
 			<label index="contact_person">Kontaktperson</label>
 			<label index="name">Name</label>
@@ -128,6 +130,7 @@
 			<label index="jobtype.3">Emploi fixe</label>
 			<label index="positiontype.1">Position supérieur</label>
 			<label index="positiontype.2">Position non-supérieur</label>
+			<label index="description">Beschreibung</label>
 			<label index="duration">Durée</label>
 			<label index="contact_person">Personne de contact</label>
 			<label index="name">Nom</label>

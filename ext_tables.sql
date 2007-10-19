@@ -23,6 +23,7 @@ CREATE TABLE tx_mrjobs_offers (
 	canton tinytext NOT NULL,
 	jobtype int(11) DEFAULT '0' NOT NULL,
 	position tinytext NOT NULL,
+        description text NOT NULL,
 	jobstart tinytext NOT NULL,
 	number int(11) DEFAULT '0' NOT NULL,
 	timetype int(11) DEFAULT '0' NOT NULL,

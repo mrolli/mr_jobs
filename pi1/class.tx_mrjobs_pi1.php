@@ -175,7 +175,7 @@ class tx_mrjobs_pi1 extends tslib_pibase {
 						}
 						$code .= '>' . $this->pi_getLL('positiontype.' . $i) . '</option>';
 	                }
-				    $code .= '</select><label><span class="required">* </span>' . $this->pi_getLL('jobstart') . '</label><input type="text" name="jobstart" size="31" value="';
+				    $code .= '</select><label>' . $this->pi_getLL('description') . '</label><textarea name="description" rows="10" cols="60"></textarea><label><span class="required">* </span>' . $this->pi_getLL('jobstart') . '</label><input type="text" name="jobstart" size="31" value="';
 	                if(isset($data['jobstart'])) {
 	                    $code .= $data['jobstart'];
 	                }
@@ -262,7 +262,9 @@ class tx_mrjobs_pi1 extends tslib_pibase {
 	        $content .= '<p><b>' . $this->pi_getLL('jobstart') . ':</b><br />' . $row['jobstart'] . '</p>';
 	        $content .= '<p><b>' . $this->pi_getLL('jobtype') . ':</b><br />' . $this->pi_getLL('jobtype.' . $row['jobtype']);
 	        $content .= ($row['number'] > 0) ? '<br />' . $row['number'] . ' ' . $this->pi_getLL('timetype.' . $row['timetype']) : '';
+		$content .= ($row['position'] > 0) ? '<br />' . $this->pi_getLL('positiontype.' . $row['position']) : '';
 	        $content .= '</p>';
+		$content .= (!empty($row['description'])) ? '<p><b>' . $this->pi_getLL('description') . ':</b><br />' . $row['description'] . '</p>' : '';
 	        $content .= '<p><b>' . $this->pi_getLL('contact_person') . ':</b><br />' . $row['contact_firstname'] . ' ' . $row['contact_name'] . ', ' . $row['contact_function'] . '<br />';
 	        $content .= $row['contact_street'] . '<br />' . $row['contact_zip'] . ' ' . $row['contact_city'];
 	        $content .= (!empty($row['contact_email'])) ? '<br />' . $this->cObj->mailto_makelinks('mailto:' . $row['contact_email'],'') : '';
@@ -440,6 +442,7 @@ class tx_mrjobs_pi1 extends tslib_pibase {
 	    $row['canton'] = t3lib_div::_POST('canton');
 	    $row['jobtype'] = t3lib_div::_POST('jobtype');
 	    $row['position'] = t3lib_div::_POST('position');
+	    $row['description'] = t3lib_div::_POST('description');
 	    $row['jobstart'] = t3lib_div::_POST('jobstart');
 	    $row['number'] = t3lib_div::_POST('number');
 	    $row['timetype'] = t3lib_div::_POST('timetype');
@@ -464,7 +467,7 @@ class tx_mrjobs_pi1 extends tslib_pibase {
 	        return $this->displayJobOfferForm($row);
 	    }
 
-	    $newFieldList = 'deleted,hidden,starttime,endtime,zip,city,employer,workaddress,commune,canton,jobtype,position,jobstart,number,timetype,pensum_percentage,pensum_hours,term_application,contact_name,contact_firstname,contact_phone,contact_email,contact_street,contact_zip,contact_city,contact_function';
+	    $newFieldList = 'deleted,hidden,starttime,endtime,zip,city,employer,workaddress,commune,canton,jobtype,position,description,jobstart,number,timetype,pensum_percentage,pensum_hours,term_application,contact_name,contact_firstname,contact_phone,contact_email,contact_street,contact_zip,contact_city,contact_function';
 	    $this->cObj->DBgetInsert('tx_mrjobs_offers', $this->conf['pid_storage'], $row, $newFieldList, TRUE);
         $newId = $TYPO3_DB->sql_insert_id();
         $data = array(
