@@ -175,7 +175,7 @@ class tx_mrjobs_pi1 extends tslib_pibase {
 						}
 						$code .= '>' . $this->pi_getLL('positiontype.' . $i) . '</option>';
 	                }
-				    $code .= '</select><label>' . $this->pi_getLL('description') . '</label><textarea name="description" rows="10" cols="60"></textarea><label><span class="required">* </span>' . $this->pi_getLL('jobstart') . '</label><input type="text" name="jobstart" size="31" value="';
+				    $code .= '</select><label>' . $this->pi_getLL('description') . '</label><textarea name="description" rows="10" cols="30"></textarea><label><span class="required">* </span>' . $this->pi_getLL('jobstart') . '</label><input type="text" name="jobstart" size="31" value="';
 	                if(isset($data['jobstart'])) {
 	                    $code .= $data['jobstart'];
 	                }
@@ -264,7 +264,7 @@ class tx_mrjobs_pi1 extends tslib_pibase {
 	        $content .= ($row['number'] > 0) ? '<br />' . $row['number'] . ' ' . $this->pi_getLL('timetype.' . $row['timetype']) : '';
 		$content .= ($row['position'] > 0) ? '<br />' . $this->pi_getLL('positiontype.' . $row['position']) : '';
 	        $content .= '</p>';
-		$content .= (!empty($row['description'])) ? '<p><b>' . $this->pi_getLL('description') . ':</b><br />' . $row['description'] . '</p>' : '';
+		$content .= (!empty($row['description'])) ? '<p><b>' . $this->pi_getLL('description') . ':</b><br />' . nl2br($row['description']) . '</p>' : '';
 	        $content .= '<p><b>' . $this->pi_getLL('contact_person') . ':</b><br />' . $row['contact_firstname'] . ' ' . $row['contact_name'] . ', ' . $row['contact_function'] . '<br />';
 	        $content .= $row['contact_street'] . '<br />' . $row['contact_zip'] . ' ' . $row['contact_city'];
 	        $content .= (!empty($row['contact_email'])) ? '<br />' . $this->cObj->mailto_makelinks('mailto:' . $row['contact_email'],'') : '';
