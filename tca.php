@@ -346,7 +346,7 @@ $TCA["tx_mrjobs_offers"] = array (
 		),
     ),
 	"types" => array (
-		"0" => array("showitem" => "sys_language_uid;;;;1-1-1, l18n_parent, l18n_diffsource, hidden;;1, zip, city, employer, workaddress, commune, canton, jobtype, position, description, jobstart, number, timetype, pensum_percentage, pensum_hours, term_application, contact_name, contact_firstname, contact_phone, contact_email, contact_street, contact_zip, contact_city")
+		"0" => array("showitem" => "sys_language_uid;;;;1-1-1, l18n_parent, l18n_diffsource, hidden;;1, zip, city, employer, workaddress, commune, canton, jobtype, position, description, jobstart, number, timetype, pensum_percentage, pensum_hours, term_application, contact_name, contact_firstname, contact_phone, contact_email, contact_function, contact_street, contact_zip, contact_city")
 	),
 	"palettes" => array (
 		"1" => array("showitem" => "starttime, endtime, fe_group")

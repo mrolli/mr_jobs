@@ -265,7 +265,7 @@ class tx_mrjobs_pi1 extends tslib_pibase {
 		$content .= ($row['position'] > 0) ? '<br />' . $this->pi_getLL('positiontype.' . $row['position']) : '';
 	        $content .= '</p>';
 		$content .= (!empty($row['description'])) ? '<p><b>' . $this->pi_getLL('description') . ':</b><br />' . nl2br($row['description']) . '</p>' : '';
-	        $content .= '<p><b>' . $this->pi_getLL('contact_person') . ':</b><br />' . $row['contact_firstname'] . ' ' . $row['contact_name'] . ', ' . $row['contact_function'] . '<br />';
+	        $content .= '<p><b>' . $this->pi_getLL('contact_person') . ':</b><br />' . $row['contact_firstname'] . ' ' . $row['contact_name'] . '<br />' . $row['contact_function'] . '<br />';
 	        $content .= $row['contact_street'] . '<br />' . $row['contact_zip'] . ' ' . $row['contact_city'];
 	        $content .= (!empty($row['contact_email'])) ? '<br />' . $this->cObj->mailto_makelinks('mailto:' . $row['contact_email'],'') : '';
 	        $content .= (!empty($row['contact_phone'])) ? '<br />' . $row['contact_phone'] : '';
