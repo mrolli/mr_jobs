@@ -256,7 +256,7 @@ class tx_mrjobs_pi1 extends tslib_pibase {
 	    while($row = $TYPO3_DB->sql_fetch_assoc($result)) {
 	        $content .= '<div class="job">';
 	        $content .= '<p><b>' . $this->pi_getLL('city') . ':</b> ' . $row['zip'] . ' ' . $row['city'] . '</p>';
-	        $content .= '<p><b>' . $this->pi_getLL('employer') . ':</b><br />' . $row['employer'] . '<br />' . $row['workaddress'] . '</p>';
+	        $content .= '<p><b>' . $this->pi_getLL('employer') . ':</b><br />' . $row['employer'] . '<br />' . $this->pi_getLL('workaddress') . ': ' . $row['workaddress'] . '<br />' . $this->pi_getLL('commune') . ': ' . $row['commune'] . '<br />' . $this->pi_getLL('canton') . ': ' . $row['canton'] . '</p>';
 	        $content .= '<p><b>' . $this->pi_getLL('pensum') . ':</b><br />';
 	        $content .= $row['pensum_percentage'] . ' ' . $this->pi_getLL('percent') . '<br />' . $row['pensum_hours'] . ' h/' . $this->pi_getLL('week') . '</p>';
 	        $content .= '<p><b>' . $this->pi_getLL('jobstart') . ':</b><br />' . $row['jobstart'] . '</p>';
