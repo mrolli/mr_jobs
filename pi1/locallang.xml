@@ -60,7 +60,7 @@
 			<label index="facts_about_searched_job">Angaben zu gesuchten Stelle</label>
 			<label index="joboffer_formguide">Haben Sie Informationen über offene Stellen oder Stellvertretungen, dann füllen Sie bitte dieses Formular so vollständig wie möglich aus.</label>
 			<label index="jobsearch_formguide">Füllen Sie unser Formular aus.</label>
-			<label index="joboffers_thanks">Vielen Dank. Ihr Stellenangebot wurde gespeichert. Es wird redaktionell geprüft und dann freigeschaltet.</label>
+			<label index="joboffers_thanks">Vielen Dank. Ihr Stellenangebot wurde gespeichert. Es wird redaktionell geprüft und dann innert maximal 5 Arbeitstagen freigeschaltet.</label>
 			<label index="jobsearch_thanks">Vielen Dank. Ihre Stellensuche wurde gespeichert. Sie wird redaktionell geprüft und dann freigeschaltet.</label>
 			<label index="timetype.1">Tage</label>
 			<label index="timetype.2">Wochen</label>
@@ -108,7 +108,7 @@
 			<label index="jobsearch_formguide">Veuillez remplir ce formulaire.</label>
 			<label index="facts_about_job">Informations d'offre d'emploi</label>
 			<label index="facts_about_searched_job">Informations d'emploi chérché</label>
-			<label index="joboffers_thanks">Merci bien. Votre offre d'emploi as été enregistrer.</label>
+			<label index="joboffers_thanks">Merci bien. Votre offre d'emploi as été enregistrer. L'offre est disponible dans un délai de 5 jours max.</label>
 			<label index="jobsearch_thanks">Merci bien. Votre recherche d'emploi as été enregistrer.</label>
 			<label index="timetype.1">jours</label>
 			<label index="timetype.2">semaines</label>
