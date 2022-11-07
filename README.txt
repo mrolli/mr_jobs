@@ -1,2 +1,4 @@
+# mr_jobs
 
-Feel free to add some documentation or simply add a link to the online manual.
+This is a very old Typo3 extension managing free job offers. Not managed
+anymore and archived.
